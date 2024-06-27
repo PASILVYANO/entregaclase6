@@ -1,0 +1,81 @@
+/* inicio de paractica de CSS*/
+/*reseteo de código - Para unificar los espacios y margenes en todos los navehadores*/
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: rgba(209, 189, 181, 0.682);
+    font-family:'Times New Roman', Times, serif;
+}
+header{
+    background-color: rgba(157, 145, 145, 0.915);
+    text-align: center;
+    margin-bottom: 20px;
+}
+H1, h2{
+    color:black;
+    font-family: 'Noto Sans Elymaic';
+}
+h4{
+    text-align: center;
+}
+/*este es el formato de la imagen(logo)*/
+header img {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 20%;
+    width: 300px;
+    border: rgb(113, 113, 125) 8px solid;
+   }
+
+header nav ul{
+    list-style-type: none;
+  
+}
+/*formato del párrafo del encabezado*/
+p{
+    text-align: justify;
+    color: rgb(70, 66, 66);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    margin: 10px;
+    padding:20px;
+}
+ 
+/*formato del footer*/
+footer{
+    background-color: rgb(211, 220, 214);
+    color: black;
+    font-family: sans-serif;
+    text-align: left;
+    margin: 10px auto
+    } 
+li{
+    margin:10px;
+    padding: 5px;
+    display: inline-block;
+
+}
+.subte{
+    color: blue;
+    text-align: center;
+    text-decoration: underline;
+}
+a{
+    color:black;
+    font-size: 1,2rem;
+    font-weight: bold;
+    border: white 2px solid;
+    padding: 10px;
+    margin: 5px;
+}
+.formulario{
+    width: 500px;
+    text-align: center;
+    margin: 10px auto;
+    border: black;
+}
+.servicios{
+    background-image:url(../imagenes/more-leaves-on-green.png);
+}
