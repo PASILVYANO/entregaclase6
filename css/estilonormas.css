@@ -1,0 +1,130 @@
+/*.nav-normas{
+    color:rgb(143, 136, 239);
+    font-size: 0.5rem;
+    border: white 2px solid;
+    padding: 5px;
+    margin: 5px;
+    flex-direction: row;
+    color:white;
+    border-radius: 5%;
+    flex-wrap: wrap;
+    display: flex;*/
+ *{
+        margin:0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+.contenedor{
+    display: grid;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    grid-template-rows: 0.10fr 2fr 1.9fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 15px; 
+    row-gap: 5px;
+    padding: 20px;
+    height: fit-content;
+    grid-template-areas:
+    "header header header header"
+    "normas omc gatt mercosur"
+    "footer footer footer footer";
+    }
+.container__item{
+        border: 1px solid black;
+        height: fit-content;
+    }
+
+.header{
+        padding:20px;
+        text-align: justify;
+        background-color: #32bdd8;
+        grid-area: header;
+        color: black;
+    }
+.normas{
+    background-color: aquamarine;
+    grid-area: normas;
+    color:black;
+    }
+.omc{
+    background-color: bisque;
+    grid-area: omc;
+    
+}
+.img-normas{
+    padding: 10px;
+    margin: 10px;
+    width: 300px;
+    border: rgb(113, 113, 125) 8px solid;
+    border-radius: 10px;
+}
+.gatt{
+    background-color: rgb(169, 169, 223);
+    grid-area: gatt;
+    color: rgb(42, 63, 63);
+    
+}
+.mercosur{
+    background-color: rgb(228, 165, 165);
+    grid-area: mercosur;
+    color:rgb(85, 88, 90);
+    }
+footer{
+    background-color:orange;
+    height: 20px;
+    margin-top: 5%;
+    padding: 0.5pc;
+    color:rgb(56, 56, 225);
+    text-align: left;
+    padding-top: 5px;
+    grid-area: footer;
+}
+h2{
+    text-align: center;
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1rem;
+    color:rgb(62, 46, 188);
+    text-decoration:underline;
+}
+h1{
+    text-align: center;
+    text-decoration: double;
+}
+.a{
+    margin: 20px;
+    color:black;
+    text-decoration: none;
+    list-style-type:none;
+    line-height: 20px;
+}
+@media screen and (max-width:768px) {
+    .contenedor{
+        background-color: green;
+        grid-template-rows: 0.5fr 1.5fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+        "header header"
+        "normas omc"
+        "gatt mercosur"
+        "footer footer";
+            }
+    main{
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;        
+    }
+}
+@media  screen and (max-width:480px) 
+    {.contenedor{
+        background-color:#32bdd8;
+        grid-template-rows:1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+        "header"
+        "normas"
+        "omc"
+        "gatt"
+        "mercosur"
+        "footer"
+    }
